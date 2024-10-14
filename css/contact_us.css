@@ -1,0 +1,281 @@
+
+
+ /* contact us main bar styles are started */
+        /* General styles for the heading */
+        h1 {
+            font-weight: bold;
+            color: white;
+            margin: 0;
+        }
+
+        /* Container for the title and images */
+        .c_header_title_image_bg {
+            background-color: rgb(216, 198, 174); /* Brownish background */
+            display: flex;
+            justify-content: center; /* Center elements horizontally */
+            align-items: center; /* Center elements vertically */
+            padding: 20px;
+            width: 98%;
+            height: 60vh; /* Set a specific height if needed */
+            position: relative;
+            overflow: hidden; /* Ensures content that exceeds the container is hidden */
+        }
+
+        /* Flower image on the left, partially visible */
+        .c_header_imgL {
+            position: absolute;
+            left: -75px; /* Move it left to show partial image */
+            top: 0;
+            height: 100%;
+            object-fit: cover; /* Makes sure the image fits well */
+            z-index: 1;
+        }
+
+        /* Right-hand image */
+        .c_header_imgR {
+            position: absolute;
+            right: 0; /* Align it to the right side */
+            bottom: 0;
+            height: 80%;
+            object-fit: cover;
+            width: 25%;
+            z-index: 1; /* Higher layer than the background */
+        }
+        
+        /* Heading is perfectly centered */
+        .c_header_title {
+            z-index: 2;
+            font-family: sans-serif;
+            font-size: 50px;
+            letter-spacing: 3px;
+            word-spacing: 8px;
+            font-weight: 200;
+            text-align: center;
+        }
+
+ /* map styles are started */
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 98%;
+            height: 100vh;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            padding-left: 80px;
+            padding-top: 100px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            
+        }
+
+        .contact-info h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 5px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .map-container {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            background-color: white;
+            position: relative;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            position: relative;
+        }
+
+
+ /* Spacer between sections */
+          .spacer {
+            height: 80px; /* Adjust the space between sections */
+            background-color: white;
+        }
+
+
+ /* Form container and its image styles are started */
+        /* Form container */
+        .container {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            padding: 5px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            width: 98%;
+        }
+
+        /*both image and the form*/
+        .column {
+            height: 100vh; /* Fixed height for both columns */
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin:10px; 
+        }
+
+         /*for image*/
+        .column img {
+            width: 98% ;
+            height: 96%; /* Image takes full height of the column */
+            object-fit: cover; /* Ensures image covers the column without distortion */
+        }
+
+        /* Style for form elements */
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Box adjustment for form */
+        .box {
+            width: 98%; 
+            height: 100%; /* Fill the height of the column */
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+        }
+
+        .box h2{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 25px;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .column {
+                max-width: 98%; /* Make columns width on smaller screens */
+            }
+        }
+
+        .spacer2{
+            height: 160px; /* Adjust the space between sections */
+            background-color: white; 
+        }
+
+        .spacer2 h2{
+            text-align: center;
+            padding-top: 100px;
+            font-family: sans-serif;
+            font-size: 25px;
+        }
+        .questions_container{
+            height: 200vh;
+        }
+
+
+
+/* General styling for the FAQ section */
+    
+        .faq-container {
+            width: 98%; 
+            margin: 0; /* Remove any side margins */
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            height: 200vh;
+        }
+
+        .faq-item {
+            width: 96%; 
+            position: relative;
+            box-sizing: border-box; /* Ensure padding is included in the width */
+        }
+
+        .faq-question {
+            background-color: #f9f9f9;
+            padding: 30px; /* Increased padding for a larger box */
+            margin-bottom: 10px; /* Increased margin for spacing */
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .faq-question:hover {
+            background-color: #f1f1f1;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-top: none;
+            font-size: 16px;
+            width: 98%; 
+            box-sizing: border-box; /* Include padding in the width */
+        }
+
+        /* Arrow style for expand/collapse */
+        .faq-arrow {
+            transform: rotate(0deg);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-arrow.active {
+            transform: rotate(180deg);
+        }
+   
