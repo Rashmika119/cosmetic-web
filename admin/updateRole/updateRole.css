@@ -1,0 +1,54 @@
+.edit {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    background-color: #ECF0F1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 5%;
+}
+
+.edit h2 {
+    color: #034977;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.edit label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.edit input,
+.edit select {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+}
+
+.edit-items {
+    padding: 10px;
+}
+
+.edit button {
+    display: block;
+    margin: 0 10px;
+    background-color: #1ABC9C;
+    border: none;
+    padding: 10px 20px;
+    color: #ECF0F1;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.edit button:hover {
+    background-color: #16A085;
+}

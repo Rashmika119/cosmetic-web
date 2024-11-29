@@ -1,0 +1,132 @@
+.main-content h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    margin-top: 120px;
+    margin-left: 225px;
+    padding: 20px;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.stat-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.profile {
+    background-color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 40px auto 0 auto;
+    width: 30%;
+    height: 40%;
+    text-align: left;
+}
+
+.profile h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.profile label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.profile input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 120px;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .profile {
+        width: 80%;
+    }
+}
+
+@media (max-width: 750px) {
+    .stat-box h3 {
+        font-size: 16px;
+    }
+
+    .stat-box p {
+        font-size: 20px;
+    }
+
+    .profile h2 {
+        font-size: 20px;
+    }
+
+    .profile input {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-content h2 {
+        font-size: 20px;
+    }
+
+    .profile {
+        width: 90%;
+    }
+
+    .profile input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,154 @@
+.dashboard {
+    position: relative;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #2C3E50;
+    height: 100vh;
+    padding-top: 120px;
+    position: fixed;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.sidebar ul li a {
+    color: #ECF0F1;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #1A5276;
+    border-radius: 4px;
+    color: white;
+    padding-left: 25px;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 5px;
+    z-index: 1001;
+    background-color: #1A5276;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Large screens (1000px and below) */
+@media (max-width: 1000px) {
+    .sidebar {
+        transform: translateX(-100%);
+        z-index: 100;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .sidebar-toggle {
+        display: block;
+    }
+
+    .sidebar-toggle.active {
+        left: 225px;
+    }
+
+    .sidebar-toggle.active .toggle-icon:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .sidebar-toggle.active .toggle-icon:nth-child(2) {
+        opacity: 0;
+    }
+
+    .sidebar-toggle.active .toggle-icon:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+}
+
+/* Medium screens (750px and below) */
+@media (max-width: 750px) {
+    .sidebar {
+        width: 200px;
+        padding-top: 100px;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .sidebar ul li a {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+
+    .sidebar-toggle.active {
+        left: 205px;
+    }
+}
+
+/* Small screens (450px and below) */
+@media (max-width: 450px) {
+    .sidebar {
+        width: 180px;
+        padding-top: 90px;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .sidebar ul li a {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .sidebar-toggle {
+        top: 80px;
+        left: 5px;
+        padding: 8px;
+    }
+
+    .sidebar-toggle.active {
+        left: 185px;
+    }
+
+    .toggle-icon {
+        width: 20px;
+        height: 2px;
+        margin: 4px 0;
+    }
+}

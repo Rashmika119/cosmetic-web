@@ -1,0 +1,225 @@
+/* Base styles */
+.edit {
+    width: 90%;
+    max-width: 800px;
+    margin: 5% auto 20px;
+    background-color: #ECF0F1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit h2 {
+    color: #034977;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.edit-items {
+    padding: 20px;
+}
+
+.edit label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #2C3E50;
+}
+
+.edit input {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.edit input:focus {
+    outline: none;
+    border-color: #1ABC9C;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.3);
+}
+
+.edit img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn button {
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #1ABC9C;
+    border: none;
+    padding: 12px 30px;
+    color: #ECF0F1;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn button:hover {
+    background-color: #16A085;
+}
+
+#back {
+    text-decoration: none;
+    color: #ECF0F1;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #34495E;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#back:hover {
+    background-color: #2C3E50;
+}
+
+/* Media Query for 1000px */
+@media screen and (max-width: 1000px) {
+    .edit {
+        width: 95%;
+        padding: 25px;
+        margin-top: 70px;
+    }
+
+    .edit h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .edit label {
+        font-size: 16px;
+    }
+
+    .edit input {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .edit img {
+        max-width: 180px;
+    }
+
+    .btn button {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+}
+
+/* Media Query for 750px */
+@media screen and (max-width: 750px) {
+    .edit {
+        width: 90%;
+        padding: 20px;
+        margin-top: 60px;
+    }
+
+    .edit-items {
+        padding: 15px;
+    }
+
+    .edit h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .edit label {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .edit input {
+        padding: 8px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .edit img {
+        max-width: 150px;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+
+    .btn button {
+        padding: 8px 20px;
+        font-size: 14px;
+        margin: 0 5px;
+    }
+}
+
+/* Media Query for 450px */
+@media screen and (max-width: 450px) {
+    .edit {
+        width: 95%;
+        padding: 15px;
+        margin-top: 50px;
+    }
+
+    .edit-items {
+        padding: 10px;
+    }
+
+    .edit h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .edit label {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .edit input {
+        padding: 6px;
+        margin-bottom: 12px;
+        font-size: 13px;
+    }
+
+    .edit img {
+        max-width: 120px;
+    }
+
+    .btn {
+        margin-top: 15px;
+    }
+
+    .btn button {
+        padding: 6px 15px;
+        font-size: 13px;
+        margin: 0 3px;
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 10px auto;
+    }
+
+    #back {
+        padding: 6px 15px;
+        font-size: 13px;
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 10px auto;
+        text-align: center;
+    }
+}

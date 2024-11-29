@@ -1,0 +1,268 @@
+.content {
+    padding: 20px;
+    background-color: #F7F9F9;
+    margin-top: 30px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-features {
+    background-color: #ECF0F1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 75%;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.add-features h1 {
+    color: #2C3E50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.add-features label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.add-features input {
+    flex: 1;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.add-brands {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ECF0F1;
+    border-radius: 10px;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-button-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    max-width: 500px;
+}
+
+.detailsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.brands{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.brands th,
+.brands td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #BDC3C7;
+}
+
+.brands th {
+    background-color: #34495E;
+    color: white;
+}
+
+.detailsTable th,
+.detailsTable td {
+    border: 1px solid #BDC3C7;
+    padding: 12px;
+    text-align: center;
+}
+
+.detailsTable th {
+    background-color: #34495E;
+    color: white;
+}
+
+.detailsTable td {
+    background-color: #ECF0F1;
+}
+
+button {
+    background-color: #1ABC9C;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #16A085;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+.pagination {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #f4f4f4;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* Media Query for screens up to 1000px */
+@media screen and (max-width: 1000px) {
+    .content {
+        padding: 15px;
+        margin-top: 70px;
+    }
+
+    .add-feature h1 {
+        font-size: 22px;
+    }
+
+    .add-feature input {
+        max-width: 350px;
+    }
+
+    .detailsTable th,
+    .detailsTable td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 80px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
+
+/* Media Query for screens up to 750px */
+@media screen and (max-width: 750px) {
+    .content {
+        padding: 12px;
+        margin-top: 60px;
+    }
+
+    .add-feature {
+        padding: 15px;
+    }
+
+    .add-feature h1 {
+        font-size: 20px;
+    }
+
+    .input-button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input-button-container button {
+        width: 100%;
+    }
+
+    .add-feature input {
+        max-width: 100%;
+    }
+
+    .detailsTable {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .detailsTable th,
+    .detailsTable td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    img {
+        max-width: 60px;
+    }
+
+    .pagination {
+        gap: 5px;
+    }
+
+    .pagination a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+/* Media Query for screens up to 450px */
+@media screen and (max-width: 450px) {
+    .content {
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    .add-feature {
+        padding: 12px;
+    }
+
+    .add-feature h1 {
+        font-size: 18px;
+    }
+
+
+    img {
+        max-width: 100%;
+        margin: 10px 0;
+    } 
+
+    .pagination {
+
+        align-items: center;
+        gap: 8px;
+    }
+
+    .pagination a {
+        
+        text-align: center;
+    }
+}

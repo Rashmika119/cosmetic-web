@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.discount-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #086454;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0c710f;
+}
+
+.discount-form {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(3, 3, 3, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.discount-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.discount-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+    font-size: 18px;
+}
+
+.discount-form input, 
+.discount-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #a9a3a3;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.discount-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #086454;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.discount-form button:hover {
+    background-color: #0c710f;
+}
+
+/* Media Queries */
+@media (max-width: 1000px) {
+    .discount-container {
+        padding: 15px;
+        padding-top: 60px;
+    }
+
+    .discount-form {
+        padding: 25px;
+    }
+
+    .discount-form h2 {
+        font-size: 22px;
+    }
+
+    .discount-form label {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 750px) {
+    .discount-container {
+        padding: 10px;
+        padding-top: 50px;
+    }
+
+    .discount-form {
+        padding: 20px;
+    }
+
+    .discount-form h2 {
+        font-size: 20px;
+    }
+
+    .discount-form label {
+        font-size: 15px;
+    }
+
+    .discount-form input,
+    .discount-form select {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .discount-form button {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .back-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .discount-container {
+        padding: 8px;
+        padding-top: 40px;
+    }
+
+    .discount-form {
+        padding: 15px;
+    }
+
+    .discount-form h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .discount-form label {
+        font-size: 14px;
+    }
+
+    .discount-form input,
+    .discount-form select {
+        padding: 8px;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .discount-form button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .back-button {
+        padding: 6px 12px;
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+}

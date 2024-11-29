@@ -1,0 +1,347 @@
+.mainImage {
+    width: 100%;
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to right, #ff4d00, #ff9900);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+.mainImage h3 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    /* Change 'right' to 'left' */
+    transform: translate(-50%, -50%);
+    /* Translate to the center */
+    font-size: 1rem;
+    color: white;
+}
+
+.mainImage h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Change 'right' to 'left' */
+    transform: translate(-50%, -50%);
+    /* Translate to the center */
+    font-size: 2rem;
+    color: white;
+}
+
+.mainImage .pic1 {
+    position: absolute;
+    top: 50%;
+    height: 100%;
+    transform: translateY(-50%);
+}
+
+.mainImage .pic2 {
+    position: absolute;
+    top: calc(50% + 10px);
+    right: -20px;
+    height: 400px;
+    transform: translateY(-50%) rotateY(180deg) rotate(5deg);
+}
+
+/* Dashboard Section */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.linkssection {
+    flex: 1;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    min-width: 200px;
+}
+
+/* User Email Section */
+.useremail {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.useremail .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.useremail i {
+
+    font-size: 4rem;
+    color: #d90032;
+
+}
+
+.useremail p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: black;
+
+}
+
+/* Links Section */
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin: 15px 0;
+}
+
+.links ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.links ul li a:hover {
+    color: #d90032;
+}
+
+/* Details Section */
+.details {
+    flex: 4;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* General form styling */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Form inputs */
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Submit buttons */
+.edit-button,
+.edit-address-btn {
+    background-color: #d90032;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Form headers */
+h2,
+h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+li strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    form {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .edit-button,
+    .edit-address-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .linkssection {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .links ul {
+        display: flex;
+        justify-content:center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .mainImage {
+        height: 300px;
+    }
+
+    .mainImage .pic2 {
+        display: none;
+    }
+
+
+    .mainImage .pic1 {
+        left: -20px;
+
+    }
+
+    .order {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    .order-details ul,
+    .order-items ul {
+        gap: 20px;
+    }
+
+    .order-items {
+        justify-content: space-between;
+    }
+
+    .itempic img {
+        max-width: 80px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+
+    form {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    h2,
+    h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .mainImage {
+        height: 200px;
+    }
+
+    .mainImage h1 {
+        font-size: 1.2rem;
+    }
+
+    .mainImage h3 {
+        font-size: 0.6rem;
+    }
+
+    .mainImage .pic1,
+    .mainImage .pic2 {
+        display: none;
+    }
+
+    .dashboard {
+        padding: 10px;
+    }
+
+    .useremail p {
+        font-size: 1rem;
+    }
+
+    .details p {
+        font-size: 1rem;
+    }
+
+    .dashboard {
+        flex-direction: row;
+    }
+
+    .order {
+        flex-direction: column;
+    }
+
+    .order-details ul,
+    .order-items ul {
+        gap: 15px;
+    }
+
+    .order-management h2,
+    .order-management h3 {
+        font-size: 1.1rem;
+    }
+
+    li {
+        font-size: 0.9rem;
+    }
+
+    .cancel-btn,
+    .return-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .itempic img {
+        max-width: 60px;
+    }
+}

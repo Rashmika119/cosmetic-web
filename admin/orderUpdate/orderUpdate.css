@@ -1,0 +1,135 @@
+.edit {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    background-color: #ECF0F1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit h2 {
+    color: #034977;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.edit label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.edit select {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.edit-items {
+    padding: 10px;
+}
+
+.edit button {
+    display: block;
+    margin: 0 auto;
+    background-color: #1ABC9C;
+    border: none;
+    padding: 10px 20px;
+    color: #ECF0F1;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.edit button:hover {
+    background-color: #16A085;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .edit {
+        width: 70%;
+        padding: 15px;
+        margin-top: 60px;
+    }
+
+    .edit h2 {
+        font-size: 22px;
+    }
+
+    .edit label {
+        font-size: 16px;
+    }
+
+    .edit select {
+        width: 50%;
+        font-size: 14px;
+    }
+
+    .edit button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 750px) {
+    .edit {
+        width: 85%;
+        padding: 15px;
+    }
+
+    .edit h2 {
+        font-size: 20px;
+    }
+
+    .edit label {
+        font-size: 15px;
+    }
+
+    .edit select {
+        width: 70%;
+        font-size: 13px;
+    }
+
+    .edit button {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .edit {
+        width: 95%;
+        padding: 10px;
+        margin-top: 40px;
+    }
+
+    .edit h2 {
+        font-size: 18px;
+    }
+
+    .edit label {
+        font-size: 14px;
+    }
+
+    .edit select {
+        width: 100%;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .edit button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}

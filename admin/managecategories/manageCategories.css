@@ -1,0 +1,256 @@
+.content {
+    padding: 20px;
+    background-color: #F7F9F9;
+    margin-top: 30px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-features {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #ECF0F1;
+    border-radius: 10px;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-features h1 {
+    color: #2C3E50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.add-features form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-features label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.add-features input,
+.add-features select {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.delete-categories {
+    margin-top: 40px;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-categories h1 {
+    color: #2C3E50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.type {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.type th,
+.type td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #BDC3C7;
+}
+
+.type th {
+    background-color: #34495E;
+    color: white;
+}
+
+.detailsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.detailsTable th,
+.detailsTable td {
+    border: 1px solid #BDC3C7;
+    padding: 12px;
+    text-align: left;
+}
+
+.detailsTable th {
+    background-color: #34495E;
+    color: white;
+}
+
+.detailsTable td {
+    background-color: #ECF0F1;
+}
+
+.brands {
+    margin-top: 40px;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.brands h1 {
+    color: #2C3E50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.but {
+    background-color: #1ABC9C;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 80px;
+}
+
+.but:hover {
+    background-color: #16A085;
+}
+
+/* Media Query for screens up to 1000px */
+@media screen and (max-width: 1000px) {
+    .content {
+        
+        
+        padding: 15px;
+    }
+
+    .add-features h1,
+    .delete-categories h1,
+    .brands h1 {
+        font-size: 22px;
+    }
+
+    .add-features input,
+    .add-features select {
+        max-width: 350px;
+    }
+
+    .type th,
+    .type td,
+    .detailsTable th,
+    .detailsTable td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .but {
+        padding: 10px 20px;
+    }
+}
+
+/* Media Query for screens up to 750px */
+@media screen and (max-width: 750px) {
+    .content {
+        
+        padding: 12px;
+    }
+
+    .add-features h1,
+    .delete-categories h1,
+    .brands h1 {
+        font-size: 20px;
+    }
+
+    .add-features {
+        padding: 15px;
+    }
+
+    .add-features input,
+    .add-features select {
+        max-width: 300px;
+    }
+
+    .type,
+    .detailsTable {
+        font-size: 13px;
+    }
+
+    .type th,
+    .type td,
+    .detailsTable th,
+    .detailsTable td {
+        padding: 8px;
+    }
+
+    .but {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}
+
+/* Media Query for screens up to 450px */
+@media screen and (max-width: 450px) {
+    .content {
+        margin-top: 30px;
+        
+        padding: 10px;
+    }
+
+    .add-features h1,
+    .delete-categories h1,
+    .brands h1 {
+        font-size: 18px;
+    }
+
+    .add-features {
+        padding: 12px;
+    }
+
+    .add-features input,
+    .add-features select {
+        max-width: 100%;
+    }
+
+    .type,
+    .detailsTable {
+        font-size: 12px;
+    }
+
+    .type th,
+    .type td,
+    .detailsTable th,
+    .detailsTable td {
+        padding: 6px;
+    }
+
+    /* Stack table headers and data for better mobile view */
+    
+
+    
+
+    .but {
+        padding: 8px 14px;
+        font-size: 12px;
+        width: 100%;
+        margin-top: 5px;
+    }
+}

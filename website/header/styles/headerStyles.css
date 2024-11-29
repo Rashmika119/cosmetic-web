@@ -1,0 +1,261 @@
+/* Global body styles */
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+/* Header section */
+.headSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+}
+
+/* First navigation bar */
+.firstNavBar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.firstNavBar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.firstNavBar nav ul li a {
+    text-decoration: none;
+    color: black;
+
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.firstNavBar nav ul li a:hover {
+    background-color: #f5f5f5;
+    color: #d90032;
+}
+
+/* Second navigation bar */
+.secondNavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 30px;
+    background-color: #fff;
+    position: relative;
+    
+}
+
+.secondNavBar img {
+    height: 50px;
+}
+
+.secondNavBar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.secondNavBar nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.secondNavBar nav ul li a:hover {
+    background-color: #f5f5f5;
+    color: #d90032;
+}
+
+.iconBar {
+    display: flex;
+    gap: 50px;
+}
+
+.iconBar a {
+    color: #d90032;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 1sec ease;
+}
+
+.iconBar a:hover i {
+    transform: scale(1.3);
+}
+
+/* Toggle button */
+.togglebutton {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #d90032;
+    font-size: 1.8rem;
+}
+
+.togglemenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    background-color: #3a3a3a;
+    color: white;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.toggleCloseButton {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #d90032;
+    font-size: 1.5rem;
+}
+
+.toggleList nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+.toggleList nav ul li {
+    margin-bottom: 20px;
+}
+
+.toggleList nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.toggleIconBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+
+.toggleIconBar a:hover {
+    color: #d90032;
+}
+
+.toggleIconBar a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.searchOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent black background */
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchOverlay form {
+    display: flex;
+    width: 500px;
+}
+
+.searchOverlay.active {
+    display: flex;
+}
+
+.searchOverlay input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.searchOverlay button {
+    background-color: #d90032;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.searchOverlay button:hover {
+    background-color: #b90028;
+}
+
+/* Close search bar button */
+.searchOverlayClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Hide first navbar and main-nav for smaller screens */
+@media (max-width: 1200px) {
+    .firstNavBar {
+        display: none;
+    }
+
+    .secondNavBar .main-nav {
+        display: none;
+    }
+
+    .secondNavBar .iconBar {
+        display: none;
+    }
+
+    /* Display the toggle button and menu */
+    .togglebutton {
+        display: block;
+    }
+
+    .togglemenu.active {
+        display: block;
+    }
+
+    .searchOverlay.active {
+        display: flex;
+    }
+}

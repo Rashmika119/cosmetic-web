@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #F0F0F0;
+}
+
+h1 {    
+    font-weight: 280;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 17px;    
+}
+
+h4 {
+    text-align: center; 
+    padding-bottom: 17px; 
+    padding-top: 7px;
+}
+
+h5 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 10px; 
+}
+
+u {
+    text-align: left;
+}
+
+#ABOUT-US {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+#header-direction {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.topic_header {
+    color: white;
+    background-color: lightcoral;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden; 
+    height: 60vh; 
+}
+
+.home-hidden-link {
+    cursor: pointer;
+    text-decoration: none; 
+    color: inherit;     
+}
+
+.content {
+    background-color: white;
+    text-align: center;
+    padding: 30px; 
+    margin: 20px 0;  
+    display: inline-block; 
+    box-shadow: 5px rgba(0, 0, 0, 0.1); 
+}
+
+.format-para {
+    font-weight: 100;
+    text-align: justify; 
+    line-height: 1.6; 
+    font-size: 16px;
+}
+
+#intro {
+    max-width: 550px; 
+    margin: 0 auto; 
+}
+
+#value-info {
+    max-width: 500px;
+}
+
+.about-us-logo-img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo-img {
+    display: inline-block;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    width: 550px; 
+    vertical-align: top;
+    margin: 20px 0;
+    padding: 230px 0;
+    font-family: "Merriweather", serif;
+    color: white;
+    font-weight: bolder;
+}
+
+.About-us {
+    text-align: center;
+}
+
+.vision-mission {
+    display: inline-block;
+}
+
+#quality {
+    padding: 70px 0 20px 0; 
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 5px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+.quality-logo {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(245, 104, 23);
+    border-radius: 50%;
+    margin: 0;
+}
+
+.quality-name {
+    font-weight: 100;
+    margin-top: none;
+    margin-bottom: 70px;
+}
+
+#vision, #mission {
+    background-color: white;
+    padding: 20px;
+    max-width: 45%; 
+    box-shadow: 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 6px; 
+    text-align: center;
+}
+
+.vision-mission {
+    display: flex;
+    justify-content: space-around; 
+    padding: 25px 10px; 
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+#text {
+    width: 500px;
+}
+
+#header-img1 {
+    width: 350px;
+    height: 300px;
+    padding-top: 5px;
+}
+
+#header-img2 {
+    width: 350px;
+    height: 350px;
+    padding-right: 50px;
+    margin-top: -5px;
+}
+
+#header-img1, #header-img2 {
+    max-width: 100%;  
+}
+
+.values {
+    background-color: white;
+    padding: 20px;
+}
+
+.value-set {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery-set1, .gallery-set2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery-img {
+    width: 25%;
+    aspect-ratio: 1/1;
+}
+
+h3 {
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+
+.gallery {
+    margin: 0;
+}
+
+
+@media (max-width: 480px) {
+    .topic_header {
+        flex-direction: row;
+        height: auto;
+        padding: 5px; 
+        text-align: center; 
+        height: 250px; 
+        margin-bottom: 10px; 
+    }
+
+    #header-img1, #header-img2 {
+        width: 40%; 
+        height: auto; 
+        margin: 10px 0; 
+    }
+
+    #ABOUT-US {
+        font-size: 0.9rem;  
+        margin-right: 20px;
+        margin-left: 20px;
+        letter-spacing: 5px; 
+    }
+    .home-hidden-link{
+        text-decoration: none;
+        font-size: 0.5rem;
+        
+    } 
+    #header-direction {
+        text-decoration: none;  
+        font-size: 0.5rem; 
+       
+    }
+
+    .logo-img {
+        width: 100%; 
+        padding: 150px 0; 
+        text-align: center;
+    }
+
+    .about-us-logo-img {
+        width: 50px; 
+        height: 50px; 
+    }
+
+    .About-us {
+        padding: 20px; 
+    }
+
+    #intro {
+        max-width: 100%;
+        margin: 10px; 
+        font-size: 0.9rem; 
+    }
+
+    .content h1 {
+        font-size: 1.5rem; 
+    }
+
+    .content h4 {
+        font-size: 1rem; 
+    }
+    .vision-mission {
+        flex-direction: row; 
+        gap: 15px; 
+    }
+
+    #vision, #mission {
+        max-width: 100%; 
+        padding: 15px; 
+    }
+
+    #text {
+        width: 100%;
+        font-size: 0.9rem; 
+    }
+
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    h4 {
+        font-size: 1rem; 
+    }
+    #quality {
+        width: 100%;
+        padding: 30px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    .quality-logo {
+        width: 10%; 
+        height: 10%;
+   
+    }
+
+    .quality-name {
+        font-size: 0.9rem; 
+        margin-top: 50px; 
+        margin-bottom: 30px; 
+    }
+
+    .quality-logo, .quality-name {
+        width: 10%; 
+    }
+
+    .values {
+        padding: 10px;
+    }
+
+    .value-set {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .value-set div {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .format-para {
+        font-size: 14px;
+        text-align: justify;
+    }
+   
+    .content, .values, .gallery {
+        padding: 15px;
+    }
+}

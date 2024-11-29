@@ -1,0 +1,243 @@
+/* Base styles */
+.content {
+    padding: 20px;
+    background-color: #F7F9F9;
+    margin-top: 50px;
+    flex: 1;
+    min-height: 100vh;
+}
+
+.add-feature {
+    background-color: #ECF0F1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.add-feature h1 {
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.add-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.add-feature label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2C3E50;
+}
+
+.add-feature input, 
+.add-feature select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.detailsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.detailsTable th, 
+.detailsTable td {
+    border: 1px solid #BDC3C7;
+    padding: 12px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.detailsTable th {
+    background-color: #34495E;
+    color: white;
+    font-size: 14px;
+}
+
+.detailsTable td {
+    background-color: #ECF0F1;
+    font-size: 14px;
+}
+
+button {
+    background-color: #1ABC9C;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin: 15px auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #16A085;
+}
+
+button.edit {
+    background-color: #3498db;
+}
+
+button.edit:hover {
+    background-color: #2980b9;
+}
+
+img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.pagination {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 4px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #f4f4f4;
+}
+
+.pagination a.active {
+    background-color: #1ABC9C;
+    color: white;
+    border-color: #1ABC9C;
+}
+
+/* Media Query for 1000px */
+@media screen and (max-width: 1000px) {
+    .content {
+     
+        padding: 15px;
+    }
+
+    .add-feature h1 {
+        font-size: 20px;
+    }
+
+    .add-feature input, 
+    .add-feature select {
+        padding: 10px;
+    }
+
+    .detailsTable th,
+    .detailsTable td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    img {
+        max-width: 60px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+/* Media Query for 750px */
+@media screen and (max-width: 750px) {
+    .content {
+        margin-left: 0;
+        padding: 10px;
+        margin-top: 60px;
+    }
+
+    .add-feature {
+        padding: 15px;
+    }
+
+    .add-container {
+        padding: 10px;
+    }
+
+    .detailsTable {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .detailsTable th,
+    .detailsTable td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .pagination a {
+        padding: 6px 10px;
+        margin: 0 2px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+/* Media Query for 450px */
+@media screen and (max-width: 450px) {
+    .content {
+        padding: 5px;
+        margin-top: 50px;
+    }
+
+    .add-feature h1 {
+        font-size: 18px;
+    }
+
+    .add-feature label {
+        font-size: 12px;
+    }
+
+    .add-feature input, 
+    .add-feature select {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .detailsTable th,
+    .detailsTable td {
+        padding: 4px;
+        font-size: 11px;
+    }
+
+    img {
+        max-width: 40px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+
+    .pagination a {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}

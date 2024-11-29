@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #F0F0F0
+}
+
+#CHECKOUT {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+#header-direction {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.topic_header {
+    color: white;
+    background: linear-gradient(to right, rgb(213, 81, 230), rgb(239, 94, 198));
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    height: 345px;
+    text-align: center;
+}
+
+.home-hidden-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+#header-img1 {
+    width: 330px;
+    height: 330px;
+}
+
+#header-img2 {
+    width: 500px;
+    height: 300px;
+    margin-top: -10px;
+}
+
+#header-img1,
+#header-img2 {
+    max-width: 100%;
+    
+}
+
+.left {
+    background-color: white;
+    width: 58%;
+    padding: 50px;
+    margin-left: 1%;
+    margin-top: 60px;
+}
+
+h4 {
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.right {
+    background-color: white;
+    width: 35%;
+    padding: 40px 30px;
+    margin-left: 10px;
+    margin-top: 60px;
+    margin-right: 1%;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-list {
+    margin-bottom: 20px;
+}
+
+.product-list .product-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-family: "Kavivanar", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.product-list .product-item span:first-child {
+    max-width: 60%;
+    
+    overflow-wrap: break-word;
+    
+    word-wrap: break-word;
+    
+    overflow: visible;
+    
+
+}
+
+.product-list .product-item span:second-child {
+    align-self: center;
+    
+    line-height: 1;
+    
+}
+
+.subtotal {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.payment-method {
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.payment-method label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 10px;
+}
+
+.place-order-button {
+    width: 80%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0 auto;
+}
+
+.place-order-button-alone {
+    width: 80%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0 auto;
+}
+
+hr {
+    border: 0.1px solid rgb(169, 169, 169);
+    margin: 20px;
+    align-items: center;
+}
+
+#message {
+    display: none;
+    
+    margin-top: 8px;
+    font-size: 13px;
+    color: rgb(162, 162, 162);
+    padding-left: 5px;
+}
+
+.right.label {
+    font-size: normal;
+}
+
+#Cash {
+    padding-bottom: 10px;
+}
+
+.img {
+    height: 17px;
+    width: 25px;
+    padding-top: 5px;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    gap: 20px;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    .checkout-container {
+        flex-direction: column;
+    
+        background-color: white;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        
+        margin-left: 0;
+    
+        margin-top: 20px;
+    
+    }
+
+    .left {
+        margin-top: 30px;
+    
+    }
+
+    .right {
+        margin-top: 20px;
+        
+    }
+
+}
+
+#YourOrder {
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+#empty_msg {
+    color: red;
+}
+
+#billing {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.left label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    
+}
+
+.left input[type="text"],
+.left input[type="email"],
+.left input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+
+    font-size: 16px;
+}
+
+.left button {
+    background-color: #28a745;
+
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.left button:hover {
+    background-color: #218838;
+    
+}
+
+
+.message {
+    color: #d9534f;
+    
+    margin-top: 10px;
+    font-size: 14px;
+}

@@ -1,0 +1,390 @@
+.mainImage {
+    width: 100%;
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to right, #ff4d00, #ff9900);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+.mainImage h3 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    /* Change 'right' to 'left' */
+    transform: translate(-50%, -50%);
+    /* Translate to the center */
+    font-size: 1rem;
+    color: white;
+}
+
+.mainImage h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Change 'right' to 'left' */
+    transform: translate(-50%, -50%);
+    /* Translate to the center */
+    font-size: 2rem;
+    color: white;
+}
+
+.mainImage .pic1 {
+    position: absolute;
+    top: 50%;
+    height: 100%;
+    transform: translateY(-50%);
+}
+
+.mainImage .pic2 {
+    position: absolute;
+    top: calc(50% + 10px);
+    right: -20px;
+    height: 400px;
+    transform: translateY(-50%) rotateY(180deg) rotate(5deg);
+}
+
+/* Dashboard Section */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.linkssection {
+    flex: 1;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    min-width: 200px;
+}
+
+/* User Email Section */
+.useremail {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.useremail .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.useremail i {
+
+    font-size: 4rem;
+    color: #d90032;
+
+}
+
+.useremail p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: black;
+
+}
+
+/* Links Section */
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin: 15px 0;
+}
+
+.links ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.links ul li a:hover {
+    color: #d90032;
+}
+
+/* Details Section */
+.details {
+    flex: 4;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.order-management {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.order-management:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.order {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.order-management h2 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.order-items{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.order-management h3 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: bold;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.order-details ul {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 0;
+
+}
+
+ul {
+
+    list-style: none;
+}
+
+
+.order-items {
+    display: flex;
+    flex: 4;
+}
+
+.order-items ul {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.itempic img {
+    max-width: 100px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-btn,
+.return-btn,
+.logout {
+    background-color: #d90032;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.cancel-btn:hover,
+.return-btn:hover {
+    background-color: #b00028;
+}
+
+.order-actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+
+.account-actions,
+.addresses,
+.payment-methods {
+    margin-top: 20px;
+}
+
+.edit-btn,
+.change-password-btn,
+.edit-address-btn,
+.add-payment-btn {
+    background-color: #d90032;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover,
+.change-password-btn:hover,
+.edit-address-btn:hover,
+.add-payment-btn:hover {
+    background-color: #b00028;
+}
+
+.addresses p,
+.payment-methods p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .linkssection {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .links ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+
+    .mainImage {
+        height: 300px;
+    }
+
+    .mainImage .pic2 {
+        display: none;
+    }
+
+
+    .mainImage .pic1 {
+        left: -20px;
+
+    }
+
+    .order {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .order-details ul,
+    .order-items ul {
+        gap: 20px;
+    }
+
+    .order-items {
+        justify-content: space-between;
+    }
+
+    .itempic img {
+        max-width: 80px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .mainImage {
+        height: 200px;
+    }
+
+    .mainImage h1 {
+        font-size: 1.2rem;
+    }
+
+    .mainImage h3 {
+        font-size: 0.6rem;
+    }
+
+    .mainImage .pic1,
+    .mainImage .pic2 {
+        display: none;
+    }
+
+    .dashboard {
+        padding: 10px;
+    }
+
+    .useremail p {
+        font-size: 1rem;
+    }
+
+    .details p {
+        font-size: 1rem;
+    }
+
+    .dashboard {
+        flex-direction: row;
+    }
+
+    .order {
+        flex-direction: column;
+    }
+
+    .order-details ul,
+    .order-items ul {
+        gap: 15px;
+    }
+
+    .order-management h2,
+    .order-management h3 {
+        font-size: 1.1rem;
+    }
+
+    li {
+        font-size: 0.9rem;
+    }
+
+    .cancel-btn,
+    .return-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .itempic img {
+        max-width: 60px;
+    }
+}

@@ -1,0 +1,151 @@
+.content {
+    padding: 20px;
+    background-color: #F7F9F9;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 80px;
+}
+
+.content h2 {
+    color: #034977;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.paymentsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.paymentsTable th, .paymentsTable td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #BDC3C7;
+}
+
+.paymentsTable th {
+    background-color: #34495E;
+    color: white;
+    font-weight: bold;
+}
+
+.paymentsTable td {
+    background-color: #ECF0F1;
+}
+
+.actionBtn {
+    background-color: #1ABC9C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actionBtn:hover {
+    background-color: #16A085;
+}
+
+.actionBtn.refunded {
+    background-color: #BDC3C7;
+    cursor: not-allowed;
+}
+
+.pagination {
+    margin: 20px 0;
+    text-align: center;
+    align-items: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 4px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #f4f4f4;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .content {
+        width: 90%;
+        font-size: 14px;
+        margin-top: 60px;
+    }
+
+    .paymentsTable th, .paymentsTable td {
+        padding: 10px;
+    }
+
+    .actionBtn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 750px) {
+    .content {
+        width: 95%;
+        font-size: 12px;
+    }
+
+    .paymentsTable th, .paymentsTable td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .actionBtn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .pagination a {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .content {
+        
+        padding: 10px;
+        font-size: 10px;
+        margin-top: 40px;
+    }
+
+    .paymentsTable {
+        font-size: 10px;
+    }
+
+    .paymentsTable th, .paymentsTable td {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .actionBtn {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .pagination a {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+}

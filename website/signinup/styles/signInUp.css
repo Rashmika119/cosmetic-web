@@ -1,0 +1,171 @@
+.mainImage {
+    width: 100%;
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to right, #003366, #00bfff);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+.mainImage h3 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    color: white;
+}
+
+.mainImage h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+}
+
+.mainImage .pic1 {
+    position: absolute;
+    top: 50%;
+    height: 450px;
+    transform: translateY(-50%) rotate(20deg);
+}
+
+.mainImage .pic2 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 400px;
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.loginContainer {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.loginContainer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.loginContainer h3 {
+    font-size: 1.2rem;
+    color: #333;
+
+    margin: 0 0 10px 0;
+    text-align: left;
+}
+
+.loginContainer div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.loginContainer label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.loginContainer form div input[type="email"],
+.loginContainer form div input[type="password"],
+.loginContainer form div input[type="text"],
+.loginContainer form div input[type="number"],
+.loginContainer form div input[type="tel"] {
+    width: 90%;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.loginContainer input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+    background-color: #d90032;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginContainer input[type="submit"]:hover {
+    background-color: #b80028;
+}
+
+.loginContainer p {
+    margin-top: 25px;
+}
+
+.loginContainer a {
+    color: #d90032;
+    text-decoration: none;
+}
+
+.loginContainer a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+}
+
+@media (max-width: 1000px) {
+
+    .mainImage {
+        height: 300px;
+    }
+
+    .mainImage .pic2 {
+        display: none;
+    }
+
+
+    .mainImage .pic1 {
+        left: -120px;
+
+    }
+
+
+}
+
+@media (max-width: 500px) {
+
+
+    .mainImage {
+        height: 200px;
+    }
+
+    .mainImage h1 {
+        font-size: 1.2rem;
+    }
+
+    .mainImage h3 {
+        font-size: 0.6rem;
+    }
+
+    .mainImage .pic1,
+    .mainImage .pic2 {
+        display: none;
+    }
+
+
+}

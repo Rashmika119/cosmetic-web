@@ -1,0 +1,232 @@
+.banner {
+    width: 100%;
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to right, #FF8A8A, #F0EAAC);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.bannerImg1 {
+    position: absolute;
+    height: 100%;
+    object-fit: contain;
+    right: -80px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.itembutton {
+    display: flex;
+    gap: 5px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination-button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination-button.active {
+    background-color: #d90032;
+    color: white;
+}
+
+.itembutton button {
+    background-color: #d90032;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.bannerImg2 {
+    position: absolute;
+    height: 80%;
+    object-fit: contain;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%) rotate(-10deg);
+}
+
+.banner h3 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    color: white;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    color: white;
+}
+
+.banner.pic1 {
+    position: absolute;
+    top: 50%;
+    height: 450px;
+    transform: translateY(-50%) rotate(20deg);
+}
+
+.sale-item {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sale-item img {
+    width: 100%;
+    height: 50%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.sales-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.item-name {
+    font-size: 20px !important;
+    font-weight: bold;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+.sale-item p:not(.item-name) {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0px;
+}
+
+.sale-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.sale-item a {
+    text-decoration: none;
+    color: #666;
+}
+
+.discount {
+    text-decoration: line-through;
+}
+
+.add {
+    position: relative;
+    bottom: 1%;
+    display: inline-block;
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.add:hover {
+    background-color: #b12009;
+}
+
+
+@media (max-width: 480px) {
+    .banner {
+        height: 250px; 
+        margin-bottom: 10px; 
+    }
+
+    .bannerImg1 {
+        height: 50%; 
+        right: -40px; 
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .bannerImg2 {
+        height: 50%; 
+        left: 5%; 
+        transform: translateY(-50%) rotate(-5deg); 
+    }
+
+    .banner h1 {
+        font-size: 1.5rem; 
+        top: 45%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .banner h3 {
+        font-size: 0.8rem;
+        top: 80%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .sales-group {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+    }
+
+    
+    .sale-item {
+        padding: 15px; 
+    }
+
+    .sale-item img {
+        height: 200px; 
+        object-fit: contain;
+    }
+
+    .item-name {
+        font-size: 18px; 
+    }
+
+    .sale-item p {
+        font-size: 14px; 
+    }
+
+    .itembutton button {
+        padding: 8px 16px; 
+    }
+
+    .sale-item:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); 
+    }
+}
